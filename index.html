@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- primele doua link-uri sunt ca sa imi dea harta: -->
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <!-- //sdasda -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.css"
+      type="text/css"
+    />
+
+    <!-- am facut ca harta sa fie pe tot ecranul (nu doar un patrat) -->
+
+    <style>
+      body {
+        margin: 0;
+      }
+      #map {
+        height: 100vh;
+        width: 100vw;
+      }
+    </style>
+    <!-- am facut o pagina separata unde sa punem java scriptul: -->
+
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <!-- si toate de mai sus le-am pus intr-un div: -->
+
+    <div id="map"></div>
+  </body>
+</html>
